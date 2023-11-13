@@ -18,10 +18,10 @@ fi
 
 mkdir /app/opencex -p
 cd /app/opencex || exit
-git clone  https://github.com/Polygant/OpenCEX-backend.git ./backend
+git clone  https://github.com/LaAlquimia/AlqEX-backend ./backend
 git clone  https://github.com/Polygant/OpenCEX-frontend.git ./frontend
 git clone  https://github.com/Polygant/OpenCEX-static.git ./nuxt
-git clone  https://github.com/Polygant/OpenCEX-JS-admin.git ./admin
+git clone  https://github.com/LaAlquimia/AlqEX-JS-admin.git ./admin
 
 echo "`cat <<YOLLOPUKKI
 
@@ -1159,11 +1159,6 @@ docker exec -it opencex python wizard.py
 cd /app/opencex || exit
 docker compose stop
 docker compose up -d
-
-### Registration of the installation OpenCEX
-curl --location 'http://alertbot.plgdev.com/registration' \
---header 'Content-Type: application/json' \
---data "{\"domain\": \"${DOMAIN}\"}"
 
 
 # cleanup
