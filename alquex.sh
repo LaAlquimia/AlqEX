@@ -20,7 +20,7 @@ mkdir /app/opencex -p
 cd /app/opencex || exit
 git clone  https://github.com/LaAlquimia/AlqEX-backend ./backend
 git clone  https://github.com/Polygant/OpenCEX-frontend.git ./frontend
-git clone  https://github.com/Polygant/OpenCEX-static.git ./nuxt
+git clone  https://github.com/LaAlquimia/AlqEx-static.git ./nuxt
 git clone  https://github.com/LaAlquimia/AlqEX-JS-admin.git ./admin
 
 echo "`cat <<YOLLOPUKKI
